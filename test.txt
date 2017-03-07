@@ -1,0 +1,6 @@
+class Generate(Resource):
+    def get(self):
+        args = parser.parse_args()
+        sample_args = {'save_dir': 'save', 'n': 10, 'prime': args.start_text, 'sample': 1}
+        sampled_text = start_text, 'sample': 1}
+        sampled_text = service_fu
