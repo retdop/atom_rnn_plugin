@@ -143,7 +143,8 @@ module.exports = RNNWriter =
     buffer = @editor.getBuffer()
     endPos = @editor.getCursorBufferPosition()
     endCharIndex = buffer.characterIndexForPosition(endPos)
-    startCharIndex = endCharIndex - howManyChars
+    startCharIndex = 0
+    # startCharIndex = endCharIndex - howManyChars
     startPos = buffer.positionForCharacterIndex(startCharIndex)
     startTextRange = new Range(startPos, endPos)
     return @editor.getBuffer().getTextInRange(startTextRange)
