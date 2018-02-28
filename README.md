@@ -1,6 +1,6 @@
 #atom-rnn-writer
 
-This is a package for the [Atom](https://atom.io/) text editor that works with [`keras-rnn-server`](https://github.com/retdop/keras-rnn-server) to provide responsive, inline "autocomplete" powered by a recurrent neural network trained on a corpus of python libraries
+This is a package for the [Atom](https://atom.io/) text editor that works with [`keras-char-rnn-server`](https://github.com/retdop/keras-char-rnn-server) to provide responsive, inline "autocomplete" powered by a recurrent neural network trained on a corpus of python libraries
 
 ###Installation
 
@@ -21,7 +21,7 @@ Next, open Atom. Go to the Settings screen (`cmd+,`) and select Packages on the 
 
 The only thing missing is the location of a server to provide the "autocompletions." You have two options:
 
-1. Download and set up [`keras-rnn-server`](https://github.com/retdop/keras-rnn-server) along with its dependencies, which are many -- but you can skip several if you're using a pretrained model. After doing this, tell `rnn-writer` where to find `keras-rnn-server`, e.g. at `http://localhost:8080`.
+1. Download and set up [`keras-char-rnn-server`](https://github.com/retdop/keras-char-rnn-server) along with its dependencies, which are many -- but you can skip several if you're using a pretrained model. After doing this, tell `rnn-writer` where to find `keras-rnn-server`, e.g. at `http://localhost:8080`.
 2. Or...
 
 ###Use this thing!
